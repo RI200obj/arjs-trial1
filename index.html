@@ -12,19 +12,17 @@
 <body style='margin: 0; overflow: hidden;'>
     <a-scene
         vr-mode-ui="enabled: false"
-        arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'>
-
+        arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'
+    >
+        <a-box 
+            size="10 10 10" 
+            material="color: red" 
+            gps-entity-place="latitude: 1.3459; longitude: 103.8418749;" 
+            position="0 0 0"
+        ></a-box>
         <a-camera 
             gps-camera 
             rotation-reader
         ></a-camera>
-
-        <a-box 
-            size="10 10 10" 
-            material="color: red" 
-            gps-entity-place="latitude: 1.30; longitude: 103.8418749;" 
-            position="0 0 0"
-        ></a-box>
-
     </a-scene>
 </body>
